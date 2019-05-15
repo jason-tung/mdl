@@ -1,0 +1,22 @@
+// Note: This uses the light values in the provided source code.
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+constants real_black 0 0 0 0 0 0 0 0 0
+push
+push
+move 250 250 0
+rotate y 20
+rotate x 20
+sphere dull_yellow 0 0 0 75
+sphere shiny_purple 200 -300 100 120
+sphere shiny_teal -90 -20 50 20
+sphere dull_yellow 400 100 0 40
+sphere dull_yellow 50 -60 -75 20
+pop
+push
+move 250 250 999
+box real_black -20 20 20 20 -20 -20
+push
+display
+save alt.png
